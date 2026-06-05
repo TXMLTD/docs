@@ -1,0 +1,70 @@
+---
+title: "Correcting Vault Predictions and Document Types"
+sidebarTitle: "Making Corrections"
+description: "Fix incorrect Vault predictions: reject wrong tags, correct extracted values, and resolve unspecified or misclassified document types."
+---
+
+Vault's AI is trained to classify documents and extract data points accurately, but it may occasionally make mistakes — especially with ambiguous documents or formats it has seen less of. This page explains how to correct each type of error before you validate and submit.
+
+## Fixing an incorrect tag value
+
+If a tag has been extracted but the value is wrong or needs reformatting:
+
+1. Open the document in the Vault editor (click the pen icon from the document list).
+2. Find the tag in the right-hand panel.
+3. Click the **pen icon** on the tag to enter edit mode.
+4. Type the correct value and confirm.
+
+Once corrected, click the **tick** to validate the tag.
+
+## Rejecting a tag
+
+If a tag should not exist — for example, the AI has extracted a value for a question that does not apply to this document:
+
+1. Click the **x** button next to the tag in the right-hand panel.
+
+The tag is rejected and will not be included when you submit to Legislate.
+
+## Fixing an unspecified document type
+
+If Vault could not determine the document type, you will see a blue **Unspecified** label on the document. To fix it:
+
+<Steps>
+  <Step title="Click the Unspecified label">
+    Click the blue Unspecified tag — either on the Vault home screen list or in the top right of the editor view. A pop-up list of all supported document types appears.
+  </Step>
+  <Step title="Select the correct type">
+    Choose the correct document type from the list.
+  </Step>
+  <Step title="Wait for re-processing">
+    Vault re-submits the document to the AI with the corrected type. A new set of type-appropriate tags is extracted automatically.
+  </Step>
+</Steps>
+
+## Fixing a misclassified document type
+
+If Vault assigned the wrong document type (not unspecified, just incorrect), the correction process is the same:
+
+<Tabs>
+  <Tab title="From the document list">
+    On the Vault home screen, click the document type label shown in the document row. The list of document types appears. Select the correct one.
+  </Tab>
+  <Tab title="From the editor view">
+    Inside the Vault editor, click the document type label in the top right corner. The list of document types appears. Select the correct one.
+  </Tab>
+</Tabs>
+
+In both cases, the document is re-processed and a fresh set of tags is extracted based on the corrected type.
+
+<Info>Changing the document type discards all previously extracted tags and replaces them with new tags for the updated type. Any manual tags you created are also cleared, so correct the document type before adding manual fields.</Info>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Validating predictions" icon="circle-check" href="/vault/validating-predictions">
+    Approve extracted tags one by one or in bulk.
+  </Card>
+  <Card title="Manual fields" icon="plus" href="/vault/manual-fields">
+    Create a custom tag for data Vault did not extract automatically.
+  </Card>
+</CardGroup>

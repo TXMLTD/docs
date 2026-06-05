@@ -1,0 +1,137 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "TextMine",
+  "colors": {
+    "primary": "#ffffff"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/86ce2102-cd98-4dce-985a-cf46084dfe14.png",
+    "dark": "https://media.brand.dev/86ce2102-cd98-4dce-985a-cf46084dfe14.png"
+  },
+  "favicon": "https://icons.duckduckgo.com/ip3/help.textmine.com.ico",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/textmine"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/vault",
+              "getting-started/scribe",
+              "getting-started/legislate"
+            ]
+          },
+          {
+            "group": "Vault",
+            "pages": [
+              "vault/overview",
+              "vault/uploading-documents",
+              "vault/validating-predictions",
+              "vault/making-corrections",
+              "vault/manual-fields",
+              "vault/supported-documents",
+              "vault/teams",
+              "vault/ask-vault"
+            ]
+          },
+          {
+            "group": "Scribe",
+            "pages": [
+              "scribe/overview",
+              "scribe/creating-templates",
+              "scribe/import-word-templates",
+              "scribe/template-fields",
+              "scribe/conditional-logic",
+              "scribe/editing-modes",
+              "scribe/publishing-templates"
+            ]
+          },
+          {
+            "group": "Legislate",
+            "pages": [
+              "legislate/overview",
+              "legislate/creating-documents",
+              "legislate/advanced-search",
+              "legislate/signing-documents",
+              "legislate/custom-alerts"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "administration/user-permissions",
+              "administration/organisation-settings",
+              "administration/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Release Notes",
+        "groups": [
+          {
+            "group": "2026",
+            "pages": [
+              "releases/2026/may-8",
+              "releases/2026/march-25",
+              "releases/2026/march-12",
+              "releases/2026/february-19",
+              "releases/2026/february-12",
+              "releases/2026/january-28",
+              "releases/2026/january-19"
+            ]
+          },
+          {
+            "group": "2025",
+            "pages": [
+              "releases/2025/december-17",
+              "releases/2025/december-5",
+              "releases/2025/november-26",
+              "releases/2025/november-19",
+              "releases/2025/november-6",
+              "releases/2025/october-30",
+              "releases/2025/october-16",
+              "releases/2025/september-25",
+              "releases/2025/september-16",
+              "releases/2025/august-27",
+              "releases/2025/august-18",
+              "releases/2025/july-17",
+              "releases/2025/july-3",
+              "releases/2025/may-21",
+              "releases/2025/may-14",
+              "releases/2025/may-2",
+              "releases/2025/april-10",
+              "releases/2025/march-12",
+              "releases/2025/march-5",
+              "releases/2025/february-26",
+              "releases/2025/february-20",
+              "releases/2025/february-14",
+              "releases/2025/february-6",
+              "releases/2025/january-30",
+              "releases/2025/january-22"
+            ]
+          },
+          {
+            "group": "2024",
+            "pages": [
+              "releases/2024/december-2",
+              "releases/2024/november-18",
+              "releases/2024/november-1",
+              "releases/2024/may-6",
+              "releases/2024/april-10"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

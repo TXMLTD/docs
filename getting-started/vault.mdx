@@ -1,0 +1,75 @@
+---
+title: "Getting Started with Vault"
+sidebarTitle: "Vault"
+description: "Upload your first document to Vault, watch AI extract key data automatically, validate predictions, and submit verified data to Legislate."
+---
+
+Vault is TextMine's AI-powered document extraction module. Upload a PDF, and Vault classifies the document type, extracts the key data points, and presents them for your review — all before the data ever reaches your broader document database in Legislate.
+
+<Steps>
+  <Step title="Create a Vault team">
+    Before you can upload documents, you need a Vault team to hold them. Click the **+** icon next to the Vault icon in the left-hand sidebar.
+
+    A pop-up gives you two options:
+
+    - **Connect to an existing Legislate team** — use this if your team already exists in Legislate and you want Vault imports to flow into it.
+    - **Create a new Vault team** — this also creates a paired Legislate team at the same time.
+
+    <Info>Every Vault team is paired with a Legislate team. Vault holds documents under review; Legislate holds verified, submitted data.</Info>
+  </Step>
+
+  <Step title="Upload your first document">
+    Click the **Upload** button in the top right of your Vault team screen. From the upload dialog you can:
+
+    - Drag and drop one or more PDF files directly onto the dialog.
+    - Browse your local file system.
+    - Connect to a file storage integration (such as Google Drive or SharePoint) to import documents directly.
+
+    Once your files appear in the upload dialog, click **Import** to send them to Vault for processing.
+
+    <Warning>Vault only accepts PDF files. If your document is in another format, convert it to PDF before uploading. Scanned PDFs are supported.</Warning>
+  </Step>
+
+  <Step title="Let Vault extract the data">
+    After importing, Vault's AI processes each document automatically. It:
+
+    1. **Classifies the document type** based on the document's content — for example, identifying a PDF as an NDA, Invoice, or Master Service Agreement.
+    2. **Extracts key data points** (called tags) relevant to that document type — such as commencement dates, governing law, or total contract value.
+
+    You will see a confidence score next to each document on the Vault home screen. This score indicates how confident the AI is in its predictions and signals that the document is ready for your review.
+  </Step>
+
+  <Step title="Review and validate predictions">
+    Click the **pen icon** on a document to open the Vault editor. You will see the PDF on the left and the extracted tags on the right.
+
+    - Click any tag to jump to the exact section of the document the AI used to produce it.
+    - If a prediction is correct, click the **tick** to validate it.
+    - If a prediction is wrong or incomplete, click the **pen** to edit the value, then click the tick to confirm.
+    - If a tag should be removed entirely, click the **x** button to reject it.
+
+    To validate every tag at once, click the **All** button (validate all) in the top right of the editor. The Submit button becomes active only after all tags have been validated.
+
+    <Tip>Clicking a tag highlights the source text in the PDF, making it fast to spot-check predictions without reading the whole document.</Tip>
+  </Step>
+
+  <Step title="Submit to Legislate">
+    Once all tags are validated, click **Submit**. The document and its verified data move into your paired Legislate team, where you can filter, analyse, and export across your full document database.
+  </Step>
+</Steps>
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Vault overview" icon="vault" href="/vault/overview">
+    Learn the key concepts — document classification, confidence scores, and tags.
+  </Card>
+  <Card title="Making corrections" icon="pen" href="/vault/making-corrections">
+    Fix misclassified document types or incorrect tag values.
+  </Card>
+  <Card title="Supported documents" icon="file-lines" href="/vault/supported-documents">
+    See every document type and tag Vault can extract.
+  </Card>
+  <Card title="Ask Vault" icon="message" href="/vault/ask-vault">
+    Query your extracted data using natural language.
+  </Card>
+</CardGroup>

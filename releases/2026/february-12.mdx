@@ -1,0 +1,70 @@
+---
+title: "TextMine — 12 February 2026 release"
+description: "Adds alternative document type names, chained image tags, on-demand agents, table improvements, zip/folder imports, email uploads, and Ariba integration."
+---
+
+The 12 February 2026 release is a substantial update bringing alternative document type names, on-demand agents, improved table handling, zip/folder imports, email-based uploads, and a new Ariba integration.
+
+## Alternative names
+
+It is now possible to provide alternative names for a document type which can be used to classify the document. This is useful when the document type name is an abbreviation or not descriptive. Alternative names also increase the chances of the model correctly classifying the document as the desired type.
+
+![Alternative names field in document type settings](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055147110/eebfe3721527d448e2e38599eae8/Screenshot+2026-02-11+at+21_44_58.png)
+
+## Chained default tags for images
+
+You can now create default chained tags for images, which is useful for running prompts on image extracts systematically when the image type is detected.
+
+![Chained default tag configuration for images](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055149057/a73e4e517c5def05962b70eab887/Screenshot+2026-02-11+at+21_53_39.png)
+
+## On-demand agents
+
+You can now create on-demand agents which can be run from Vault. On-demand agents also offer more flexibility as you don't need to pre-define the scope of the analysis.
+
+![On-demand agent creation](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055193306/0cad66fc2af1014d4fd744a8afd7/Screenshot+2026-02-11+at+21_54_40.png)
+
+Once you have created your on-demand agent, specify the instruction you would like it to run.
+
+![Specifying the agent instruction](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055191755/6a9ee1c42e6e0c317c738ba5f897/Screenshot+2026-02-11+at+21_55_13.png)
+
+Then within the Vault, select the documents you would like to run the agent on and click **Run agent**.
+
+![Selecting documents and running the agent in Vault](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055191285/d7ca2bfface47f8d6ecb4fb217cb/Screenshot+2026-02-11+at+21_55_30.png)
+
+You will then be able to select which agent you would like to use and see the processing in the sidebar.
+
+![Agent selection and processing sidebar](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055169264/fb980c660255dec6fb5ffce36d6a/Screenshot+2026-02-11+at+21_55_53.png)
+
+The results are then accessible from the Agents section or by clicking on the completed run in Vault. Results from consecutive runs will append in the on-demand agent's results summary.
+
+![On-demand agent results summary](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055169003/625f20d8373ae765695e2e37c3a5/Screenshot+2026-02-11+at+21_57_03.png)
+
+## Table improvements
+
+Extracted tables can be included in Agent reports. This allows the reports to leverage more data than the tags. You can now also extract tables manually from image files.
+
+## Folder/zip import
+
+You can now import a zip or folders into Vault. Vault will recreate the folder structure based on what was uploaded.
+
+![Folder/zip import in Vault](https://downloads.intercomcdn.com/i/o/h2osv3w3/2056897577/b6559f2fea8fa7202eadfc3fcb33/Screenshot+2026-02-11+at+22_17_52.png)
+
+## Email integration
+
+You can email attachments to Vault directly. Each Vault has its own email address, and emails can be refreshed or disabled on demand. You can choose to include the email body in the analysis — when enabled, Vault will be able to answer questions about the contents of the email (for example, instructions).
+
+![Email integration settings in Vault](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055240017/1d9727080c6472d8fbc2132f3205/Screenshot+2026-02-11+at+22_22_30.png)
+
+## Ariba integration
+
+The Ariba integration allows you to connect your Ariba documents to Vault and makes the reverse export easier with intelligent Ariba supplier matching.
+
+### Import contract workspace and project documents
+
+![Ariba contract workspace import](https://downloads.intercomcdn.com/i/o/h2osv3w3/2055239615/4dde0839b6dfe2a2bd65423dec20/Screenshot%2B2026-02-11%2Bat%2B22_23_07.png)
+
+### Match supplier details to Ariba
+
+When the Supplier Data API is enabled, Vault will match supplier names identified in documents to their corresponding Ariba IDs.
+
+![Ariba supplier matching configuration](https://downloads.intercomcdn.com/i/o/h2osv3w3/2057061629/9a3b2a36f1cdd6a8de7212a1372e/Screenshot%2B2026-02-11%2Bat%2B22_22_48.png)

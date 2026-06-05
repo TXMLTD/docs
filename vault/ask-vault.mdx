@@ -1,0 +1,79 @@
+---
+title: "Ask Vault: Natural Language Document Queries"
+sidebarTitle: "Ask Vault"
+description: "Use Ask Vault to query extracted document data in natural language, generate exportable tables and plots, run agents, and manage documents by chat."
+---
+
+Ask Vault is a conversational interface built into Vault that lets you interrogate, transform, and analyse the data your documents contain. Instead of filtering columns manually, you type a question and Ask Vault answers it using the extracted tag data from your Vault team.
+
+## Opening Ask Vault
+
+You can open Ask Vault in two ways:
+
+- Press **Q** on your keyboard from anywhere within a Vault team.
+- Click the **Ask Vault** button in the Vault interface.
+
+The chat panel opens on the right side of the screen. You can also pop it out into a separate window for more space by clicking the pop-out icon.
+
+## What you can do
+
+Ask Vault supports natural language questions and actions across several categories:
+
+<AccordionGroup>
+  <Accordion title="Query documents">
+    Ask questions about the data in your documents. For example:
+
+    - "Which supplier agreements expire in the next 90 days?"
+    - "What is the governing law across all NDAs in this vault?"
+    - "Show me all invoices over £10,000."
+
+    Each answer includes **source documents** linked directly in the Vault, so you can cross-reference the answer with the original file.
+  </Accordion>
+
+  <Accordion title="Generate tables">
+    Ask for a structured view of your data and Ask Vault will produce a table. Tables can be exported to **CSV** or **XLSX** directly from the chat.
+  </Accordion>
+
+  <Accordion title="Generate plots">
+    Ask Vault to visualise data from a table. It will produce a chart you can export. For example: "Plot the contract values by document type."
+  </Accordion>
+
+  <Accordion title="Query failed documents">
+    Ask which documents failed to process or had low confidence scores, so you can prioritise which ones need manual review.
+  </Accordion>
+
+  <Accordion title="Assign and unassign documents">
+    Ask Vault to assign a document to a team member or unassign it. Actions that make changes will always ask you to **confirm before executing**.
+  </Accordion>
+
+  <Accordion title="Reprocess or change a document type">
+    Ask Vault to reprocess a document or change its detected type. As with all actions, you will be asked to confirm.
+  </Accordion>
+
+  <Accordion title="Run reports and agents">
+    Trigger reports or run agents on the documents in your vault through the chat interface.
+  </Accordion>
+</AccordionGroup>
+
+## How responses work
+
+Every answer is presented with references to the source documents used to produce it. Click a source reference to open the corresponding document in Vault.
+
+For any action that modifies data (assignment, reprocessing, type changes), Ask Vault will present a confirmation step before making the change.
+
+## Limitations to be aware of
+
+<Warning>Ask Vault chats are not saved. If you refresh the page or switch to a different team or screen, the chat history is lost. Copy or export any outputs you want to keep before navigating away.</Warning>
+
+<Note>Ask Vault is scoped to the team you are currently viewing. It only has access to documents within that Vault team — not documents in other teams or in Legislate.</Note>
+
+## Related pages
+
+<CardGroup cols={2}>
+  <Card title="Vault overview" icon="vault" href="/vault/overview">
+    Learn how Vault classifies and extracts data from your documents.
+  </Card>
+  <Card title="Supported documents" icon="file-lines" href="/vault/supported-documents">
+    See which document types and tags Ask Vault can reason about.
+  </Card>
+</CardGroup>

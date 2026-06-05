@@ -1,0 +1,64 @@
+---
+title: "Vault Teams and Legislate Teams"
+sidebarTitle: "Teams"
+description: "Understand how Vault teams connect to Legislate teams, how to create a new team, and the distinction between data under review and verified data."
+---
+
+Vault organises your document imports into teams. Every Vault team is paired with a Legislate team, creating a clear two-stage pipeline: documents arrive in Vault for review, and verified data flows into Legislate for analysis and management.
+
+## Why teams are separated
+
+The separation between Vault and Legislate is intentional. It distinguishes two states of your data:
+
+- **Vault (review data)** — documents that have been imported but whose extracted tags have not yet been fully validated. This data is still being checked and may contain errors.
+- **Legislate (verified data)** — documents that have been reviewed, corrected, and submitted. This data has been confirmed as accurate and is ready for analysis, filtering, and export.
+
+Keeping these two states separate ensures you can act confidently on data in Legislate without worrying that unreviewed extractions are mixed in.
+
+## Creating a Vault team
+
+<Steps>
+  <Step title="Click the + icon">
+    In the left-hand sidebar, click the **+** button next to the Vault icon. A pop-up appears with two options.
+  </Step>
+  <Step title="Choose how to connect the team">
+    <Tabs>
+      <Tab title="Connect to an existing Legislate team">
+        Select this option if your organisation already has a Legislate team you want Vault imports to flow into. Choose the Legislate team from the list.
+      </Tab>
+      <Tab title="Create a new team">
+        Select this option to create both a new Vault team and a new paired Legislate team simultaneously. Enter a name for the team.
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Start uploading">
+    Once the team is created, you can begin uploading documents to it immediately.
+  </Step>
+</Steps>
+
+## What happens when you submit a document
+
+When you validate all tags on a document in Vault and click **Submit**, the document and its verified data are transferred to the paired Legislate team. In Legislate, the document can then be:
+
+- Filtered and searched alongside your other documents.
+- Included in aggregate queries and analysis.
+- Exported as a CSV for use in other tools.
+
+<Info>Data in Vault is scoped to the team it was imported into. When you submit a document, it moves into the paired Legislate team and is no longer treated as pending review.</Info>
+
+## Related pages
+
+<CardGroup cols={2}>
+  <Card title="Uploading documents" icon="upload" href="/vault/uploading-documents">
+    Learn how to upload PDFs into your Vault team.
+  </Card>
+  <Card title="Validating predictions" icon="circle-check" href="/vault/validating-predictions">
+    Review and approve AI-extracted tags before submission.
+  </Card>
+  <Card title="Vault overview" icon="vault" href="/vault/overview">
+    Understand how Vault classifies and extracts data from documents.
+  </Card>
+  <Card title="Getting started with Legislate" icon="file-contract" href="/getting-started/legislate">
+    See how to explore and manage data in Legislate after submission.
+  </Card>
+</CardGroup>

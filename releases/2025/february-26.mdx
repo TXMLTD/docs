@@ -1,0 +1,25 @@
+---
+title: "TextMine — February 26, 2025 release"
+description: "Correct Vault tags by highlighting answers directly in the PDF preview, plus richer per-document status information in the processing queue for bulk uploads."
+---
+
+The February 26, 2025 release adds inline editing from the PDF preview and more granular queue status reporting.
+
+## Editing on the preview
+
+You can now correct tags by highlighting the answer in the PDF preview. After selecting and confirming the answer, you can make additional edits in the Vault card.
+
+<Note>
+This preview editing functionality won't work as well for scans. In those cases it may be better to use the lasso functionality in the plain text view of the document.
+</Note>
+
+## Improved queues
+
+We now provide more information on the individual status of a document during Vault processing. This update is particularly useful when uploading documents in bulk.
+
+The available statuses are:
+
+- **Queued** — the document has been uploaded
+- **Extracting text** — extracting the text from the PDF
+- **Predicting** — extracting the tags from the PDF
+- **Processed** — the tags have been extracted and are ready for review

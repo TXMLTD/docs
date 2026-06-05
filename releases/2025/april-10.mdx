@@ -1,0 +1,38 @@
+---
+title: "TextMine — April 10, 2025 release"
+description: "Users can now create custom document types and tags in Vault, activate them per team, and switch between custom and default TextMine classification pipelines."
+---
+
+The April 10, 2025 release gives users the ability to define their own document types and associated tags directly inside Vault, without needing to submit requests to TextMine.
+
+When uploading documents to Vault, the model classifies them based on one of 60 types and then extracts key terms based on the type. Previously, users would need to submit requests to TextMine to add new types. It is now possible for users to create their own custom document types and associated tags in Vault.
+
+## How to create a custom document type
+
+Go to the organisation settings under the Vault section in the sidebar and create a new document type.
+
+You will then need to specify a name and category for the new document type, as well as which Vault teams should have access to it.
+
+<Tip>
+Avoid acronyms to improve the accuracy of the classification. For example, call a type "Non-Disclosure Agreement" instead of "NDA". However, it can make sense to name a type based on an acronym if that is how the document type is commonly referred to — for example, Form ADV, 10-Q, etc.
+</Tip>
+
+Once you've created your document type you will see it in the list. Click on the type to create tags for the new custom type. You can enable or disable individual tags for the type.
+
+## Predicting custom document types
+
+Once a custom document type and its associated tags have been enabled for a team, you can activate the custom document type pipeline from the team's Vault settings in the top right, then enable custom document types.
+
+If this setting is enabled, Vault will classify uploaded documents amongst the custom types you have created.
+
+You can also manually update the type of a document to a custom type by clicking on the type field of the document and selecting the corresponding type from the list. The list of types will correspond to your custom types only.
+
+## Changing a default document type to a custom type and vice versa
+
+To change a custom type back to a default type, disable custom types in the team settings. When you select the type in the team view, you will then be able to see the list of default types.
+
+If you would like to change a default type to a custom type, select custom document types from the settings. When you click on the type the list will be limited to the custom types.
+
+<Note>
+Whilst we are proactive with fine-tuning the models, we might not have done training for new custom types and tags. Let us know if you are seeing inconsistent performance and we can improve the models with additional fine-tuning.
+</Note>

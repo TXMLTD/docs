@@ -1,0 +1,38 @@
+---
+title: "TextMine — 25 March 2026 release"
+description: "Introduces labels for prompts, image-based document processing, entity extraction with graph visualisation, and chained tags on entities and tables."
+---
+
+The 25 March 2026 release delivers labels for cleaner views, image-model processing for visually complex documents, entity extraction with relationship graphs, and chained tags that operate on extracted entities and tables.
+
+## Labels
+
+You can now provide short-form labels which will be rendered instead of the prompts in the Vault editor, table views, or CSV export.
+
+![Labels configuration in document type settings](https://downloads.intercomcdn.com/i/o/h2osv3w3/2200120961/a5ab720124381b5f8069dd34a566/Screenshot+2026-03-25+at+10_57_53.png)
+
+## Process text-based documents via image models
+
+Typically documents go through a text extraction and question answering pipeline which performs well for most document types. However, the structure of documents with visual elements or complex layouts is often lost at the text extraction step, which can sometimes impact performance.
+
+It is now possible to set the processing mode to image-based for these document types. The image model will treat each page as an image and answer the questions visually.
+
+![Image-based processing toggle in document type settings](https://downloads.intercomcdn.com/i/o/h2osv3w3/2200119529/a516af259a8e66cd9e5508b756f6/Screenshot+2026-03-25+at+10_57_28.png)
+
+## Entity extraction
+
+It is now possible to define entity extraction tags. These tags will resolve all the entities you have defined in the corresponding document.
+
+![Entity extraction tag configuration](https://downloads.intercomcdn.com/i/o/h2osv3w3/2200116632/8fcb03a5bbdc157726b8ce9ace62/Screenshot+2026-03-25+at+10_56_41.png)
+
+You can then review the entities in the entities tab, filter by relation, or visualise them in a graph.
+
+![Entities tab showing extracted entities](https://downloads.intercomcdn.com/i/o/h2osv3w3/2196334541/0df0180c77126f939d62257cb166/Screenshot+2026-03-24+at+12_36_57.png)
+
+![Entity relationship graph](https://downloads.intercomcdn.com/i/o/h2osv3w3/2196334230/fa20048b612ff86bb6f4f4d18c8a/Screenshot+2026-03-24+at+12_37_10.png)
+
+![Entity graph alternate view](https://downloads.intercomcdn.com/i/o/h2osv3w3/2196333883/7a028777bb40e5da3a093be43a25/Screenshot+2026-03-24+at+12_37_27.png)
+
+You can also create chained tags on top of entities or tables extracted from the document.
+
+![Chained tag configuration on entities or tables](https://downloads.intercomcdn.com/i/o/h2osv3w3/2196338355/b77234571733598ad611e8020692/Screenshot+2026-03-24+at+12_40_43.png)

@@ -1,0 +1,132 @@
+---
+title: "User permission settings for Enterprise organisations"
+sidebarTitle: "User permissions"
+description: "Configure roles and permissions for your Enterprise organisation. Control what each user can do across Vault, Legislate, and Vault Settings."
+---
+
+Enterprise organisations can control exactly what each user can do in TextMine by creating **roles** and assigning permissions to them. An organisation admin manages all of this through the Admin portal — a dedicated space separate from the main TextMine application.
+
+## Accessing the Admin portal
+
+The Admin portal is only available to the designated admin of your organisation. When you log in as an admin, you can access it from the navigation menu. From there you can create business units, define roles, and assign users to both.
+
+## Setting up business units
+
+Business units represent distinct teams or departments within your organisation. Documents uploaded to Vault are always associated with a business unit, so it's worth setting these up before you invite users.
+
+<Steps>
+  <Step title="Open the Admin portal">
+    Log in to TextMine and navigate to the Admin portal from the main menu.
+  </Step>
+  <Step title="Create a business unit">
+    Select **Business Units** and click **New business unit**. Give it a clear name that reflects the team or department it represents.
+  </Step>
+  <Step title="Configure Vault settings for the business unit">
+    Once created, you can configure Vault-specific settings for the business unit, including signature detection, agile text extraction, and custom document types.
+  </Step>
+</Steps>
+
+## Creating roles
+
+Roles define what a user is allowed to do. You create a role, assign a set of permissions to it, and then assign users to that role.
+
+<Steps>
+  <Step title="Go to Roles in the Admin portal">
+    Select **Roles** from the Admin portal navigation.
+  </Step>
+  <Step title="Create a new role">
+    Click **New role** and give it a descriptive name — for example, "Reviewer" or "Vault Uploader".
+  </Step>
+  <Step title="Select permissions">
+    Choose the permissions this role should have. Permissions are grouped by TextMine section: Legislate, Vault, Vault Settings, and Other. See the full permissions table below.
+  </Step>
+  <Step title="Save the role">
+    Save the role. You can edit its permissions at any time.
+  </Step>
+</Steps>
+
+<Note>
+  You can update the permissions assigned to a role at any time. Changes apply to all users currently assigned to that role.
+</Note>
+
+## Assigning users to roles and business units
+
+Once you have roles and business units set up, you can assign your organisation members to them.
+
+<Steps>
+  <Step title="Open the Members section">
+    In the Admin portal, select **Members** to see all users in your organisation.
+  </Step>
+  <Step title="Select a user">
+    Click on a user to open their profile.
+  </Step>
+  <Step title="Assign a role">
+    Choose the role that matches what this user should be able to do.
+  </Step>
+  <Step title="Assign to a business unit">
+    Select the business unit or units this user belongs to. A user can belong to more than one business unit.
+  </Step>
+</Steps>
+
+## Permissions reference
+
+The tables below list every permission available in TextMine, organised by section.
+
+### Legislate
+
+| Permission | Description |
+|---|---|
+| Access to Legislate and see contracts/documents | Grants the user access to the Legislate module and the ability to view documents. |
+| Archive and activate a contract/document | Allows the user to archive or unarchive documents in Legislate. |
+| Create a contract | Allows the user to create a contract. Only applicable to Scribe customers. |
+| Delete a contract/document | Allows the user to permanently delete a contract or document. |
+| Download CSV and PDF | Allows the user to export document data as a CSV or download a PDF. |
+| Move a document to Vault | Allows the user to send a document from Legislate to Vault for processing. |
+| Update folder name | Allows the user to rename folders in Legislate. |
+| Update name of a contract/document | Allows the user to rename a contract or document. |
+
+### Vault
+
+| Permission | Description |
+|---|---|
+| Access to Vault and see documents | Grants the user access to the Vault module and the ability to view documents. |
+| Assign, change and remove assignee | Allows the user to assign a document to another user, change the assignee, or remove the assignment. |
+| Assign, change and remove reviewer | Allows the user to assign a reviewer to a document, change the reviewer, or remove them. |
+| Change type and reprocess documents and tags | Allows the user to change the document type classification and trigger reprocessing. |
+| Create a custom tag for a document | Allows the user to add a custom tag to a specific document. |
+| Manually insert a tag in the plain text | Allows the user to highlight values in the plain text tab and assign them to a default tag. |
+| Delete a custom tag for a document | Allows the user to delete a custom tag from a specific document. |
+| Delete a manually created tag or a tag with no answer | Allows the user to delete a manually created tag or a tag where no value was extracted. |
+| Delete documents | Allows the user to permanently delete documents from Vault. |
+| Download documents in any format | Allows the user to download documents from Vault as a marked-up PDF or plain text. |
+| Edit document name | Allows the user to rename a document in Vault. |
+| Edit tag values within a document | Allows the user to make corrections to the extracted values of a tag. |
+| Process custom tags | Allows the user to trigger processing of custom tags on a document. |
+| Submit documents to Legislate | Allows the user to submit validated documents from Vault to Legislate. |
+| Update a custom tag prompt for a document | Allows the user to edit the prompt associated with a custom tag on a document. |
+| Upload new documents | Allows the user to upload new documents to Vault. |
+| Validate or reject a tag within a document | Allows the user to mark an extracted tag value as correct (validated) or incorrect (rejected). |
+| Create personal team | Allows users to create a personal draft space to experiment with Vault. A personal team is not a business unit. Added **21 May 2025**. |
+
+### Vault Settings
+
+| Permission | Description |
+|---|---|
+| Create a custom tag in Vault settings | Allows the user to create a custom tag that applies to all documents uploaded to the Vault. |
+| Delete custom tags in Vault settings | Allows the user to delete a custom tag from Vault settings. |
+| Edit the default settings of a Vault business unit | Allows the user to enable or disable signature detection, agile text extraction, and other Vault configuration settings for a business unit. |
+| Enable and disable custom tags in Vault settings | Allows the user to toggle individual custom tags on or off in Vault settings. |
+| Create custom document types and assign them to a business unit | Allows the user to create custom document types and their associated tags, and assign them to a business unit. |
+| Enable users to select which custom prompts apply to which document types | Allows the user to control which custom prompts are active for each document type. |
+| Enable users to promote a custom tag to a specific document as a default tag | Allows the user to promote a custom tag so it appears as a default tag on a specific document type. |
+
+### Other
+
+| Permission | Description |
+|---|---|
+| Create and manage Alerts | Allows the user to create and manage alerts in TextMine. |
+| Create and manage Agents | Allows the user to create and manage AI agents in TextMine. |
+
+<Tip>
+  If you need to give a user temporary access to additional capabilities, update their role's permissions — changes take effect immediately for all users assigned to that role.
+</Tip>

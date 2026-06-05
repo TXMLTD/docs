@@ -1,0 +1,412 @@
+---
+title: "Vault Supported Document Types and Tags"
+sidebarTitle: "Supported Documents"
+description: "Complete list of document types Vault can classify and extract data from, including all extractable tags for each supported document type."
+---
+
+Vault has been fine-tuned on a broad range of business-critical document types. When you upload a document, Vault identifies its type and then extracts a set of predefined tags — questions the AI answers about that specific document. This page lists every supported document type and the tags Vault will attempt to extract from each.
+
+For all document types, Vault also extracts **company and signatory information** in addition to the type-specific tags listed below.
+
+<Note>New document types are added on a regular basis. If you need a document type that is not listed here, contact the TextMine team at support@textmine.com.</Note>
+
+## Document categories
+
+<Tabs>
+  <Tab title="Company Documents">
+    The following company document types are supported. Tag extraction for these types uses Vault's general classification capabilities.
+
+    - Accreditation Certificate
+    - 10-K
+    - 20-F
+    - Articles of Association
+    - Confirmation Statement
+    - Advanced Subscription Agreement
+    - Form ADV
+    - Register of Members
+    - SAFE Financing Document
+    - Share Certificate
+    - Subscription Agreement
+    - Term Sheet
+    - Written Resolution
+  </Tab>
+
+  <Tab title="Financial Documents">
+    <AccordionGroup>
+      <Accordion title="Invoice">
+        | Tag |
+        | --- |
+        | Unique number (identifier) of given invoice |
+        | Name of the organization that supplies the service (supplier) |
+        | Client who pays the invoice |
+        | Currency of the invoice |
+        | Total cost of the invoice |
+        | Start date of the service |
+        | End date of the provided service (if provided) |
+        | Payment's frequency |
+      </Accordion>
+
+      <Accordion title="Purchase Order">
+        | Tag |
+        | --- |
+        | Unique number (identifier) of given order |
+        | Name of the organization that supplies the service (supplier) |
+        | Client who pays the order |
+        | Currency of the order |
+        | Total cost of the order |
+        | Start date of the service |
+        | End date of the provided service (if provided) |
+        | Payment's frequency |
+        | Status of the purchase order ("approved", "approved not sent", "close", "review", "sent") |
+        | Delivery status of the purchase order ("past due", "on time") |
+        | Person who requested the purchase order |
+        | Vendor contact email |
+        | Received quantity |
+        | Unreceived quantity |
+        | Has the vendor viewed the purchase order ("yes" or "no")? |
+      </Accordion>
+
+      <Accordion title="Order Form">
+        | Tag |
+        | --- |
+        | Unique number (identifier) of given invoice |
+        | Name of the organization that supplies the service (supplier) |
+        | Client who pays the invoice |
+        | Currency of the invoice |
+        | Total cost of the invoice |
+        | Start date of the service |
+        | End date of the provided service (if provided) |
+        | Payment's frequency |
+        | Purchased service |
+        | List price of the purchased service |
+        | Discount applied to the price |
+        | Discount |
+        | Is there an auto-renewal? |
+        | How much notice does the client need to give to opt out of the auto-renewal? |
+        | What are the payment terms? |
+        | Does a service level agreement apply to the order? |
+        | What are the service level agreement terms? |
+        | Does the order form reference a purchase order number? |
+        | Purchase order number |
+      </Accordion>
+
+      <Accordion title="Utility Bill">
+        | Tag |
+        | --- |
+        | Unique number (identifier) of given bill |
+        | Name of the organization that supplies the service (supplier) |
+        | Client who pays the bill |
+        | Currency of the invoice |
+        | New balance of the bill |
+        | Due date of the balance |
+        | Charging frequency |
+        | Last payment date |
+        | Balance of the last bill |
+        | Value of the credits |
+        | Account number |
+        | Client address where the service is supplied |
+        | Annual electricity cost for the year |
+        | Annual gas cost for the year |
+        | Annual water cost for the year |
+        | Payment due |
+        | What is the fuel mix? |
+        | What is the voltage? |
+        | What is the capacity? |
+        | How many kW were consumed during the day tariff? |
+        | How many kW were consumed during the night tariff? |
+        | How many kW were consumed during the demand charge tariff? |
+        | What was the cost of the day tariff? |
+        | What was the cost of the night tariff? |
+        | What was the cost of the demand charge tariff? |
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+
+  <Tab title="HR Documents">
+    The following HR document types are supported. Tag extraction for Employment, Company Policy, Stock Option Agreement, and Staff Handbook uses Vault's general classification capabilities.
+
+    - Employment
+    - Company Policy
+    - Stock Option Agreement
+    - Staff Handbook
+
+    <AccordionGroup>
+      <Accordion title="Consultancy / Contractor Agreement">
+        | Tag |
+        | --- |
+        | What is the agreement date? |
+        | What is the commencement date? |
+        | What is the work location? |
+        | What is the description of the services which will be delivered? |
+        | Do the services have an end date ("yes" or "no")? |
+        | What is the end date? |
+        | What is the time period that each side must give before ending the contract? |
+        | Will the services include Deliverables ("yes" or "no")? |
+        | Please specify the deliverables |
+        | What are the charges for the deliverable? |
+        | Can the consultant hire a substitute ("yes" or "no")? |
+        | Can the consultant hire a third party to do administrative, clerical or secretarial tasks concerned with the services ("yes" or "no")? |
+        | Will the Consultant process personal data on behalf of the Client or its associates ("yes" or "no")? |
+        | How long must the Consultant keep the Client's confidential information secret? |
+        | How will the consultant be paid ("hourly rate", "daily rate", "weekly rate" or "monthly rate")? |
+        | What is the Consultant's rate? |
+        | What is the amount of time the Consultant is expected to contribute to deliver the services? |
+        | What is the period over which the consultant is expected to work to contribute to deliver the services? |
+        | How frequently can invoices be submitted? |
+        | Within how many days of receipt of an invoice will the Client pay the Consultant? |
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+
+  <Tab title="Corporate Contracts">
+    The following corporate contract types are supported. Tag extraction for Change Request, Letter of Intent, Statement of Work, Partnership Agreement, and Recruitment Terms of Business Agreement uses Vault's general classification capabilities.
+
+    - Change Request
+    - Letter of Intent
+    - Statement of Work
+    - Partnership Agreement
+    - Recruitment Terms of Business Agreement
+
+    <AccordionGroup>
+      <Accordion title="Master Service Agreement (MSA)">
+        | Tag |
+        | --- |
+        | What is the commencement date? |
+        | What is the end date? |
+        | Can the agreement be terminated ("yes" or "no")? |
+        | How can the agreement be terminated? |
+        | What is the value of this contract? |
+        | Are there consequences for breaching the contract ("yes" or "no")? |
+        | What are the consequences for breaching the contract? |
+        | Does the supplier provide artificial intelligence services to the client? |
+        | Does the supplier use artificial intelligence to deliver its services to the client? |
+        | Is the supplier allowed to use the client's data for the purposes of training its artificial intelligence models? |
+        | Where is the client's data stored? |
+        | Is the Supplier making any representations ("yes" or "no")? |
+        | What are the scope of services? |
+        | What is the Business Continuity Plan? |
+        | Within what timeframe will the Supplier restore services following any disruptions in accordance with the Business Continuity Plan? |
+        | How often is the Business Continuity Plan tested? |
+        | What laws must the parties comply to in this Agreement? |
+        | What record keeping and reporting obligations does the Supplier have? |
+        | Who owns the Intellectual Property Rights for the Created IPR? |
+        | Who owns the Intellectual Property Rights for the Background IPR? |
+        | What is the Statement of Work (SOW) process? |
+        | What is the Service Level? |
+        | How can a change to the Scope of Services be requested? |
+        | What is the pricing schedule? |
+        | Can the Supplier pass on additional expenses? |
+        | Is the price inclusive of VAT? |
+        | What will the Supplier indemnify the Customer against? |
+        | Do indemnifications from TUPE/ARD apply? |
+        | What happens in the event the Customer's use of Services/Deliverables infringe with IPRs? |
+        | Can confidential information be disclosed to the Receiving Parties' Representatives? |
+        | What is the limit of liability in the event of a breach of confidentiality? |
+        | What is the limit of liability with regards to indemnification? |
+        | What is the limit of liability with regards to Data Protection? |
+        | Is there any liability for consequential loss or damage? |
+        | What is the Customer's total aggregate liability to the Supplier? |
+        | What is the Supplier's total aggregate liability to the Customer? |
+        | What insurance level is the Supplier required to maintain? |
+        | What are the parties' rights with regards to Force Majeure? |
+        | What is the Term of the Agreement? |
+        | Can the Agreement be terminated without cause? |
+        | Can a SOW be terminated without cause? |
+        | Can the Agreement be terminated with cause by the Customer? |
+        | Can the Agreement be terminated with cause by the Supplier? |
+        | Do cross termination rights apply? |
+        | Are any fees refundable on the event of termination? |
+        | What happens once a written request for termination has been submitted by the Customer? |
+        | Can the Supplier subcontract any of its services? |
+        | What are the audit rights? |
+        | Who bears the cost of the audit? |
+        | How can a notice be given under this Agreement? |
+        | What is the governing law? |
+        | In the event of a conflict which agreement is followed? |
+        | What is the dispute resolution procedure? |
+      </Accordion>
+
+      <Accordion title="Service Agreement">
+        | Tag |
+        | --- |
+        | What is the commencement date? |
+        | What is the end date? |
+        | Can the agreement be terminated ("yes" or "no")? |
+        | How can the agreement be terminated? |
+        | What is the value of this contract? |
+        | Are there consequences for breaching the contract ("yes" or "no")? |
+        | What are the consequences for breaching the contract? |
+        | Does the supplier provide artificial intelligence services to the client? |
+        | Does the supplier use artificial intelligence to deliver its services to the client? |
+        | Is the supplier allowed to use the client's data for the purposes of training its artificial intelligence models? |
+        | Where is the client's data stored? |
+        | Is the Supplier making any representations? |
+        | What are the scope of services? |
+        | What is the Business Continuity Plan? |
+        | Within what timeframe will the Supplier restore services following any disruptions in accordance with the Business Continuity Plan? |
+        | How often is the Business Continuity Plan tested? |
+        | What laws must the parties comply to in this Agreement? |
+        | What record keeping and reporting obligations does the Supplier have? |
+        | Who owns the Intellectual Property Rights for the Created IPR? |
+        | Who owns the Intellectual Property Rights for the Background IPR? |
+        | What is the Statement of Work (SOW) process? |
+        | What is the Service Level? |
+        | How can a change to the Scope of Services be requested? |
+        | What is the pricing schedule? |
+        | Can the Supplier pass on additional expenses? |
+        | Is the price inclusive of VAT? |
+        | What will the Supplier indemnify the Customer against? |
+        | Do indemnifications from TUPE/ARD apply? |
+        | What happens in the event the Customer's use of Services/Deliverables infringe with IPRs? |
+        | Can confidential information be disclosed to the Receiving Parties' Representatives? |
+        | What is the limit of liability in the event of a breach of confidentiality? |
+        | What is the limit of liability with regards to indemnification? |
+        | What is the limit of liability with regards to Data Protection? |
+        | Is there any liability for consequential loss or damage? |
+        | What is the Customer's total aggregate liability to the Supplier? |
+        | What is the Supplier's total aggregate liability to the Customer? |
+        | What insurance level is the Supplier required to maintain? |
+        | What are the parties' rights with regards to Force Majeure? |
+        | What is the Term of the Agreement? |
+        | Can the Agreement be terminated without cause? |
+        | Can a SOW be terminated without cause? |
+        | Can the Agreement be terminated with cause by the Customer? |
+        | Can the Agreement be terminated with cause by the Supplier? |
+        | Do cross termination rights apply? |
+        | Are any fees refundable on the event of termination? |
+        | What happens once a written request for termination has been submitted by the Customer? |
+        | Can the Supplier subcontract any of its services? |
+        | What are the audit rights? |
+        | Who bears the cost of the audit? |
+        | How can a notice be given under this Agreement? |
+        | What is the governing law? |
+        | In the event of a conflict which agreement is followed? |
+        | What is the dispute resolution procedure? |
+      </Accordion>
+
+      <Accordion title="Supplier Agreement">
+        | Tag |
+        | --- |
+        | What is the commencement date? |
+        | What is the end date? |
+        | Does the agreement renew automatically ("yes" or "no")? |
+        | How much notice must the client give to cancel the renewal? |
+        | What is the name of the product which is being sold? |
+        | Is the product a software? |
+        | What is the description of the product which is being sold? |
+        | What is the contract term? |
+        | How frequently will invoices be sent to the customer ("annually", "quarterly", "monthly")? |
+        | How much time does the customer have to pay the invoices? |
+        | What is the governing law of the agreement? |
+        | What is the jurisdiction of the agreement? |
+        | What is the total liability for the supplier? |
+        | When will the supplier indemnify the customer? |
+        | Is any of the supplier's intellectual property "granted", "assigned" or "transferred" to Customer? |
+        | Does the agreement contain a force majeure clause ("yes" or "no")? |
+        | What are the details of the force majeure clause? |
+        | Does the supplier have any publicity rights ("yes" or "no")? |
+        | What are the publicity rights of the agreement? |
+        | Do any restrictions apply to the customer ("yes" or "no")? |
+        | What are the restrictions which apply to the customer? |
+        | How many user licences has the Customer licensed from the supplier? |
+        | Is the Customer's usage limited by the agreement ("yes" or "no")? |
+        | Does the supplier provide professional services to the customer ("yes" or "no")? |
+        | What are the professional services provided to the customer? |
+        | Are there any warranties in the agreement? |
+        | What are the details of the warranties? |
+        | Does the supplier offer a service level agreement ("yes" or "no")? |
+        | What are the details of the service level agreement offered by the supplier? |
+        | Does the supplier have a written security policy ("yes" or "no")? |
+        | What is the written security policy of the supplier? |
+        | If applicable, what is the agreement date? |
+        | What is the term of the engagement? |
+        | Can the agreement be terminated ("yes" or "no")? |
+        | How can the agreement be terminated? |
+        | What is the termination notice? |
+        | What is the value of this contract? |
+        | Are there consequences for breaching the contract ("yes" or "no")? |
+        | What are the consequences for breaching the contract? |
+        | Does the supplier provide artificial intelligence services to the client? |
+        | Does the supplier use artificial intelligence to deliver its services to the client? |
+        | Is the supplier allowed to use the client's data for the purposes of training its artificial intelligence models? |
+        | Where is the client's data stored? |
+        | Is the Supplier making any representations? |
+        | What are the scope of services? |
+        | What is the Business Continuity Plan? |
+        | Within what timeframe will the Supplier restore services following any disruptions? |
+        | How often is the Business Continuity Plan tested? |
+        | What laws must the parties comply to in this Agreement? |
+        | What record keeping and reporting obligations does the Supplier have? |
+        | Who owns the Intellectual Property Rights for the Created IPR? |
+        | Who owns the Intellectual Property Rights for the Background IPR? |
+        | What is the Statement of Work (SOW) process? |
+        | What is the Service Level? |
+        | How can a change to the Scope of Services be requested? |
+        | What is the pricing schedule? |
+        | Can the Supplier pass on additional expenses? |
+        | Is the price inclusive of VAT? |
+        | What will the Supplier indemnify the Customer against? |
+        | Do indemnifications from TUPE/ARD apply? |
+        | What happens in the event the Customer's use of Services/Deliverables infringe with IPRs? |
+        | Can confidential information be disclosed to the Receiving Parties' Representatives? |
+        | What is the limit of liability in the event of a breach of confidentiality? |
+        | What is the limit of liability with regards to indemnification? |
+        | What is the limit of liability with regards to Data Protection? |
+        | Is there any liability for consequential loss or damage? |
+        | What is the Customer's total aggregate liability to the Supplier? |
+        | What is the Supplier's total aggregate liability to the Customer? |
+        | What insurance level is the Supplier required to maintain? |
+        | What are the parties' rights with regards to Force Majeure? |
+        | What is the Term of the Agreement? |
+        | Can the Agreement be terminated without cause? |
+        | Can a SOW be terminated without cause? |
+        | Can the Agreement be terminated with cause by the Customer? |
+        | Can the Agreement be terminated with cause by the Supplier? |
+        | Do cross termination rights apply? |
+        | Are any fees refundable on the event of termination? |
+        | What happens once a written request for termination has been submitted by the Customer? |
+        | Can the Supplier subcontract any of its services? |
+        | What are the audit rights? |
+        | Who bears the cost of the audit? |
+        | How can a notice be given under this Agreement? |
+        | What is the governing law? |
+        | In the event of a conflict which agreement is followed? |
+        | What is the dispute resolution procedure? |
+      </Accordion>
+
+      <Accordion title="Non-Disclosure Agreement (NDA)">
+        | Tag |
+        | --- |
+        | What is the agreement date? |
+        | What is the commencement date? |
+        | What is the confidentiality term of the agreement? |
+        | Does the NDA have a purpose ("yes" or "no")? |
+        | What is the purpose of the confidentiality agreement? |
+        | Is the non-disclosure agreement "one-way", "mutual" or "tripartite"? |
+        | Does the confidentiality agreement include a non-compete ("yes" or "no")? |
+        | What is the jurisdiction of the agreement? |
+        | What is the governing law of the agreement? |
+        | What confidential information is being disclosed? |
+        | What is the cost of a breach? |
+        | How long does the Recipient have to destroy information? |
+        | Do any clauses survive termination ("yes" or "no")? |
+        | Does the Discloser retain the rights to the Confidential Information ("yes" or "no")? |
+        | Is there an indemnity clause ("yes" or "no")? |
+        | Does the recipient of confidential information have Representatives ("yes" or "no")? |
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Adding custom tags
+
+If a document type is missing a tag you need, you can create your own using Vault's manual field functionality.
+
+<CardGroup cols={2}>
+  <Card title="Manual fields" icon="plus" href="/vault/manual-fields">
+    Add custom tags to any document by selecting text in the plain text view.
+  </Card>
+  <Card title="Making corrections" icon="pen" href="/vault/making-corrections">
+    Fix incorrect classifications or wrong extracted values.
+  </Card>
+</CardGroup>

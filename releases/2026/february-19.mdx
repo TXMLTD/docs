@@ -1,0 +1,40 @@
+---
+title: "TextMine — 19 February 2026 release"
+description: "Adds embedded image detection with per-type classification, org chart transcription pipelines, and marked-up PDF exports for image documents."
+---
+
+The 19 February 2026 release introduces embedded image detection inside documents, a specialised org chart transcription pipeline, and the ability to export image documents as marked-up PDFs.
+
+## Embedded image detection
+
+It is now possible to identify images inside documents. Images are classified against your predefined image types, and their corresponding tags will be processed against any detected images.
+
+For example, if you have a chart image type and your default tags ask for a summary of the chart, the embedded image detection will provide a summary for each chart detected in your document.
+
+To get started, define your image types, tags, and associated vaults.
+
+![Image type and tag configuration](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079129386/69d87a2bba8efb8c52cca165bfbf/Screenshot+2026-02-18+at+12_43_18.png)
+
+You can then either enable embedded image detection at the document level by going to the document type's settings.
+
+![Embedded image detection toggle in document type settings](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079136679/78bc91f11e09d2ee44fe8ea4fdc8/Screenshot%2B2026-02-18%2Bat%2B12_44_03.png)
+
+Alternatively, you can enable embedded image detection at the Vault level, in which case it will run on all documents uploaded to the Vault.
+
+![Embedded image detection toggle in Vault settings](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079131585/46d9b0afbad452d4114411ff4c87/Screenshot+2026-02-18+at+12_44_42.png)
+
+You can then view the detected images and associated tags in the documents in Vault.
+
+![Detected images and tags in the Vault document editor](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079180596/04966902d50b8d320cc9038e5b76/Screenshot+2026-02-18+at+12_57_55.png)
+
+## Org chart transcription
+
+When processing a "Chart Transcription" tag in org charts, Vault will follow a specific pipeline to accurately transcribe the entities and relationships. Entities are sorted by order of appearance for ease of review and corrections.
+
+![Org chart transcription result](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079128792/2d8e31bb0ccb257a25f14545c42f/Screenshot+2026-02-18+at+12_41_53.png)
+
+## Marked-up image downloads
+
+Image documents can now be exported to marked-up PDFs with their tags.
+
+![Marked-up PDF export of an image document](https://downloads.intercomcdn.com/i/o/h2osv3w3/2079186751/6f42d695470f0e76ca14455833d2/Screenshot+2026-02-18+at+12_59_41.png)

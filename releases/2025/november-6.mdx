@@ -1,0 +1,46 @@
+---
+title: "TextMine — 6 November 2025 release"
+description: "Adds cover pages with a hyperlinked table of contents to PDF exports, semantic tags for multi-section answers, a section navigator, and general agent actions."
+---
+
+The 6 November 2025 release adds cover pages to PDF exports, semantic tags for comprehensive multi-section answers, a section navigator for standard tags, and general agent actions that operate on extracted data.
+
+## Cover pages
+
+TextMine now includes a cover page with a table of contents listing the questions and the corresponding pages they appear on. The table of contents is hyperlinked — clicking a question takes you directly to the corresponding page.
+
+<Note>
+  The DRAFT label is shown when a document is downloaded from Vault. It is removed on downloads from Legislate.
+</Note>
+
+![PDF cover page with hyperlinked table of contents](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817294801/519ff0a978e3c76fa68abf231eab/Screenshot+2025-11-06+at+13_55_54.png)
+
+## Semantic tags
+
+When Vault extracts data from a document, the standard approach evaluates answers from multiple sections and picks the best option. The recently introduced aggregation tag produces an answer using all the answers.
+
+Semantic tags now present answers from all sections. To create a semantic tag, enable the semantic tag option and process the tag.
+
+![Enabling the semantic tag option](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817313184/73130ff100ba46e0b07ce7ddaecc/Screenshot+2025-11-06+at+14_15_26.png)
+
+You will then see the semantic tags appear on the right with a count of how many were found in the document.
+
+![Semantic tags panel showing multiple section answers](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817312750/553735a097ba6ee0790e943d34e5/Screenshot+2025-11-06+at+14_19_41.png)
+
+Normal tags now also offer a navigator to review the sections the model considered, which helps with reviewing tags and alternatives.
+
+![Section navigator for a standard tag](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817318166/90ccefe57ae4aab52684fad8a3d9/Screenshot+2025-11-06+at+14_14_32.png)
+
+## General actions
+
+It is now possible to instruct TextMine agents to interpret and act on data which has been extracted by Vault.
+
+![General action configuration in an agent](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817345516/c39f19c432aaa87700a1a444f46d/Screenshot+2025-11-06+at+14_37_50.png)
+
+You will see a summary of the findings in the results page.
+
+![General action results summary](https://downloads.intercomcdn.com/i/o/h2osv3w3/1817354376/3d0d443b7b5b65a7278f217b86a7/Screenshot+2025-11-06+at+14_47_06.png)
+
+<Note>
+  General actions currently look at all the documents in a Vault. Support for folders and individual documents will be expanded in the coming weeks.
+</Note>

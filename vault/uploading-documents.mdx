@@ -1,0 +1,62 @@
+---
+title: "Uploading Documents to Vault"
+sidebarTitle: "Uploading Documents"
+description: "How to upload PDF documents to Vault using the upload button, drag and drop, or a connected file storage integration such as Google Drive."
+---
+
+Before Vault can extract data from your documents, you need to upload them. Vault accepts PDF files only and supports several ways to get documents into the system — a direct upload, drag and drop, or a connection to an external file storage service.
+
+## Before you upload
+
+<Note>Vault only supports PDF imports. If your document is in Word, Excel, or another format, convert it to PDF before uploading. Scanned documents are supported as long as they are in PDF format.</Note>
+
+You also need a Vault team to upload into. If you have not yet created one, see [Vault teams](/vault/teams).
+
+## Uploading documents
+
+<Steps>
+  <Step title="Open the upload dialog">
+    From your Vault team screen, click the **Upload** button in the top right corner. The upload dialog will open.
+  </Step>
+
+  <Step title="Add your files">
+    You have three options for adding files:
+
+    <Tabs>
+      <Tab title="Drag and drop">
+        Drag one or more PDF files from your file system directly onto the upload dialog area. The files will appear in the queue immediately.
+      </Tab>
+      <Tab title="Browse files">
+        Click inside the upload area to open a file picker. Select one or more PDF files from your computer.
+      </Tab>
+      <Tab title="File storage integration">
+        Connect to your preferred cloud storage service (such as Google Drive, SharePoint, or Dropbox) by selecting it from the integrations list in the upload dialog. Browse and select the files you want to import.
+
+        <Info>If your preferred storage integration is not listed, contact support at support@textmine.com.</Info>
+      </Tab>
+    </Tabs>
+  </Step>
+
+  <Step title="Import">
+    Once all files appear in the upload queue, click **Import**. Vault begins processing each document: classifying the document type and extracting tags. Processing time depends on document length and complexity.
+  </Step>
+</Steps>
+
+## After uploading
+
+Each imported document appears in your Vault team list with a confidence score. The score reflects how certain the AI is about its predictions across the document's tags.
+
+From this list you can:
+
+- Click a document to open the Vault editor and review extracted tags.
+- Click the document type label to correct the classification if it is wrong.
+- Click the pen icon to enter the full review and validation view.
+
+<CardGroup cols={2}>
+  <Card title="Validating predictions" icon="circle-check" href="/vault/validating-predictions">
+    Review AI predictions and approve them individually or all at once.
+  </Card>
+  <Card title="Making corrections" icon="pen" href="/vault/making-corrections">
+    Fix incorrect document types or wrong tag values.
+  </Card>
+</CardGroup>

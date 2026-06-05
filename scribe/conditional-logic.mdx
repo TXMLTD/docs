@@ -1,0 +1,60 @@
+---
+title: "Adding Conditional Logic to Scribe Templates"
+sidebarTitle: "Conditional Logic"
+description: "How to use radio fields in Scribe to control which document sections render in Legislate — one template, multiple scenarios, no duplication."
+---
+
+Conditional logic lets you build templates that adapt to different situations without duplicating content. Instead of maintaining separate templates for every scenario, you define which sections of a document should appear based on a user's choices. This keeps your template library lean and ensures documents remain consistent across variations.
+
+## What conditional logic is for
+
+Many documents contain sections that vary based on context. An employment contract might have different clauses for full-time versus part-time employees. An NDA might include different obligations depending on whether the arrangement is one-way or mutual.
+
+Without conditional logic, you'd need a separate template for each variation. With Scribe's conditional logic, a single template can cover all cases — and users in Legislate simply answer a question to determine which version of the document they get.
+
+<Info>
+Conditional logic in Scribe is driven exclusively by **radio fields**. You need at least one radio field before you can attach conditional sections to your template.
+</Info>
+
+## Setting up conditional logic
+
+<Steps>
+  <Step title="Create a radio field">
+    Open the field settings by clicking the settings icon in the right panel, then click **Create new field**. Set the field type to **Radio** and enter the options users will be able to choose from.
+
+    For example, a field called "Employment Type" with options "Full-time" and "Part-time".
+  </Step>
+  <Step title="Highlight the conditional text for the first option">
+    In the document editor, highlight the text that should only appear when the first radio option is selected. In the toolbar that appears, choose the radio field and select the specific option this text corresponds to.
+
+    The highlighted section will now be marked as conditional on that option.
+  </Step>
+  <Step title="Repeat for each option">
+    Go back to the document and highlight the text that should appear for the second option (or any additional options). In the toolbar, associate that section with the same radio field but choose the second option.
+
+    Repeat this step for every option that has corresponding conditional text.
+  </Step>
+</Steps>
+
+## How it looks in the template editor
+
+Because Scribe needs to display all possible variations to the template author, you will see all conditional sections visible in the editor at the same time. The different sections will be visually distinguished by their associated field and option.
+
+Don't be concerned that the text appears to repeat — this is expected. The template is showing all possible states so you can author and review each one.
+
+<Note>
+Only the section that matches the user's selected option will be rendered when a document is generated in Legislate. Users will never see conditional sections that don't apply to their choice.
+</Note>
+
+## How conditionals work in Legislate
+
+When a user creates a document from a template with conditional logic, the form they fill in will include the radio question you defined. As soon as they select an option:
+
+- The section of the document linked to that option is included in the final rendered document.
+- All other conditional sections linked to different options are excluded.
+
+This means one template can produce meaningfully different documents depending on the answers given — with no manual editing required from the user.
+
+<Tip>
+You can combine conditional logic with other field types in the same template. For example, a "Part-time" selection might trigger a conditional section that also contains a "Weekly hours" text field — all defined within one template.
+</Tip>

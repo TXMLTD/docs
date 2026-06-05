@@ -1,0 +1,83 @@
+---
+title: "Template Fields Reference for Scribe"
+sidebarTitle: "Template Fields"
+description: "Reference for all Scribe field types — text, date, radio, and more — with guidance on configuring name, label, placeholder, validation, and groups."
+---
+
+Fields are the building blocks of every Scribe template. Each field represents a variable piece of information that a user will supply when creating a document in Legislate — such as a party name, a date, or a fee amount. The field configuration you set in Scribe determines both how the document is generated and what form users see when they fill it in.
+
+## How to create a field
+
+There are two ways to create a field in Scribe:
+
+- **From a text selection**: Highlight the portion of the template text where the field value should appear, then choose **Add new field** from the toolbar that appears.
+- **From the field settings panel**: Click the **settings icon** in the right-hand panel to open the field manager. From there, click **Create new field**.
+
+Both methods open the same field creation form. If you've already created fields in this or a previous template, you'll see them listed and can select an existing one to reuse instead of creating a new one.
+
+## Field settings
+
+<AccordionGroup>
+  <Accordion title="Name">
+    The name is an internal identifier for the field. It's used to organise fields in the settings panel and is not shown to end users.
+
+    **Example:** `Start Date`
+  </Accordion>
+  <Accordion title="Label">
+    The label is the question displayed to users when they fill in the form to generate a document from this template. Write it as a clear, natural-language question.
+
+    **Example:** `What is the start date of the agreement?`
+  </Accordion>
+  <Accordion title="Placeholder">
+    The placeholder gives users a hint about the expected format or type of answer. It appears inside the form field before the user starts typing.
+
+    **Example:** `Monday 19 April 2024` or `19/04/2024`
+  </Accordion>
+  <Accordion title="Group">
+    Groups let you organise related fields together in the form. Users filling in the document will see fields presented by group, making longer forms easier to navigate.
+
+    **Example:** You might create an `Agreement Dates` group containing commencement date, renewal date, and expiry date fields.
+  </Accordion>
+  <Accordion title="Type">
+    The type determines the kind of input the field accepts. Scribe offers a range of field types to match the data you need to collect. See the field types table below for a full list.
+  </Accordion>
+  <Accordion title="Validation">
+    Validation enforces the format of the user's answer. For example, you can require that a date field is entered in a specific date format. If no validation is needed, select **None**.
+  </Accordion>
+</AccordionGroup>
+
+## Field types
+
+Scribe provides a variety of field types to cover the range of data typically found in legal and business documents.
+
+| Type | Best used for |
+|------|--------------|
+| **Text** | Short free-form answers, such as a name, address, or title |
+| **Date** | Date values, such as commencement or expiry dates |
+| **Radio** | A fixed set of mutually exclusive options — also the foundation for [conditional logic](/scribe/conditional-logic) |
+| **Number** | Numeric values, such as fees, percentages, or quantities |
+| **Email** | Email addresses, with built-in format validation |
+
+<Note>
+Radio fields are the only field type that can drive conditional logic in your template. If you need sections of the document to appear or hide based on a user's choice, use a radio field. See the [Conditional Logic](/scribe/conditional-logic) guide for details.
+</Note>
+
+## Saving and editing fields
+
+After configuring all settings, click **Save** to create the field. It will appear in the fields summary panel on the right side of the editor.
+
+You can edit or delete a field at any time **before** the template is published. Once a template has been published, its field configuration is locked.
+
+<Tip>
+Fields created in one template are available to reuse in other templates. This is useful when you have common fields — like party names or agreement dates — that appear across many document types.
+</Tip>
+
+## Inserting a field into the document
+
+After creating a field, you still need to map it to the correct position in the document text:
+
+1. Select the portion of text in the editor that the field value should replace.
+2. From the toolbar, choose the field you want to insert.
+3. The selected text will be highlighted in the document to indicate it is now linked to that field.
+
+A single field can be inserted into multiple positions in the same document if the same value should appear more than once.

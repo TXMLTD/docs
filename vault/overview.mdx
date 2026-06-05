@@ -1,0 +1,70 @@
+---
+title: "Vault: AI Document Extraction Overview"
+sidebarTitle: "Overview"
+description: "Understand how Vault works — document classification, AI tag extraction, confidence scores, and how verified data flows into Legislate."
+---
+
+Vault is TextMine's AI-powered document intelligence module. Upload a PDF and Vault automatically reads it, identifies what kind of document it is, and pulls out the key data points relevant to that document type — all without any manual configuration.
+
+## How Vault works
+
+Vault uses a large language model fine-tuned on business-critical document types. When you upload a document, the AI performs two operations in sequence:
+
+1. **Document classification** — Vault analyses the content and assigns the document a type (for example, NDA, Invoice, or Master Service Agreement). This classification determines which tags Vault will attempt to extract.
+2. **Tag extraction** — Vault answers a set of predefined questions about the document based on its type. Each answer becomes a tag — a labelled data point tied to the relevant section of the source PDF.
+
+## Key concepts
+
+<AccordionGroup>
+  <Accordion title="Tags">
+    A tag is a single extracted data point — for example, the commencement date, the governing law, or the total contract value. Tags come in two forms:
+
+    - **AI-extracted tags** — produced automatically by Vault based on the document type.
+    - **Manual tags** — created by you by selecting text directly in the document view.
+
+    Each tag links back to the exact passage in the PDF that the AI used to produce it.
+  </Accordion>
+
+  <Accordion title="Document classification">
+    Vault classifies every uploaded document automatically. If the classification is wrong or Vault cannot determine the type (shown as an **Unspecified** tag), you can manually set or correct the document type. Changing the type causes Vault to re-process the document and extract a new set of tags appropriate to the corrected type.
+  </Accordion>
+
+  <Accordion title="Confidence scores">
+    Vault displays a confidence score on the document list view. A lower score signals that some predictions may need closer review before you validate and submit. The score reflects the model's certainty across all extracted tags for that document.
+  </Accordion>
+
+  <Accordion title="Validation">
+    Vault data is considered "under review" until you explicitly validate each tag. Validation is your confirmation that the extracted value is correct. Only after all tags are validated can you submit the document to Legislate, where the data is treated as verified.
+  </Accordion>
+
+  <Accordion title="Vault teams and Legislate teams">
+    Every Vault team is paired with a Legislate team. The separation is intentional: Vault holds data that is still being reviewed, while Legislate holds data that has been validated and submitted. This gives you a clear audit trail between raw extraction and verified records.
+  </Accordion>
+</AccordionGroup>
+
+## The Vault workflow
+
+```
+Upload PDF → AI classifies document type → AI extracts tags
+→ You review predictions → Correct any errors → Validate all tags
+→ Submit → Data appears in Legislate
+```
+
+## What Vault can process
+
+Vault supports a wide range of document types across four categories: Company documents, Financial documents, HR documents, and Corporate contracts. New document types are added on a regular basis.
+
+<CardGroup cols={2}>
+  <Card title="Supported document types" icon="file-lines" href="/vault/supported-documents">
+    Browse the full list of document types and their extractable tags.
+  </Card>
+  <Card title="Uploading documents" icon="upload" href="/vault/uploading-documents">
+    Learn how to upload PDFs and connect to file storage integrations.
+  </Card>
+  <Card title="Validating predictions" icon="circle-check" href="/vault/validating-predictions">
+    Review and approve AI predictions one by one or in bulk.
+  </Card>
+  <Card title="Making corrections" icon="pen" href="/vault/making-corrections">
+    Fix incorrect tags, wrong values, or misclassified document types.
+  </Card>
+</CardGroup>

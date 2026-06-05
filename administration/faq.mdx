@@ -1,0 +1,65 @@
+---
+title: "TextMine frequently asked questions"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about using TextMine, including logging out, supported file types, document types, Vault, Legislate, and Scribe workflows."
+---
+
+This page answers the most common questions customers ask about using TextMine. If you can't find what you're looking for here, contact TextMine support.
+
+<AccordionGroup>
+
+  <Accordion title="How do I log out of TextMine?">
+    To log out manually, click on your profile icon in the top corner of the application and select **Log out**.
+
+    TextMine also automatically logs you out if your session has been inactive for more than 24 hours.
+  </Accordion>
+
+  <Accordion title="What file types does Vault support?">
+    Vault is designed to work with PDF documents. For best results, upload PDFs that contain machine-readable text (not scanned images). If you have scanned documents, the agile text extraction option — which can be enabled per business unit — can improve extraction quality on non-standard layouts.
+  </Accordion>
+
+  <Accordion title="What happens when a document is misclassified?">
+    If Vault assigns the wrong document type to a document, you can change it manually. Any user with the **Change type and reprocess documents and tags** permission can select the correct document type and trigger reprocessing. Vault will re-extract the relevant tags based on the new classification.
+  </Accordion>
+
+  <Accordion title="Can I create my own document types?">
+    Yes, if you are an Enterprise customer with the appropriate permission. Users with the **Create custom document types and assign them to a business unit** permission can define new document types and specify which tags should be extracted for each one. Custom document types are then assigned to a business unit and appear alongside TextMine's built-in types.
+  </Accordion>
+
+  <Accordion title="What does submitting a document to Legislate mean?">
+    Submitting a document to Legislate moves it from Vault — where it is being reviewed and validated — into Legislate, which is your trusted, searchable store of verified document data. Once a document is in Legislate, you can search, filter, and export its data alongside your other documents. Only users with the **Submit documents to Legislate** permission can do this.
+  </Accordion>
+
+  <Accordion title="What is the difference between Vault teams and Legislate teams?">
+    In Vault, a **business unit** is a team that owns a set of documents being processed and reviewed. It controls which Vault settings apply (such as signature detection or agile text extraction) and which users have access.
+
+    In Legislate, a **team** is a group that shares access to submitted documents and Scribe templates published to them. A Vault business unit and a Legislate team can represent the same real-world group, but they are separate concepts in TextMine.
+
+    Users can also create a **personal team** in Vault (if permitted) as a private draft space for experimenting — a personal team is not a business unit and is not shared with others.
+  </Accordion>
+
+  <Accordion title="Can I approve my own requests in Scribe?">
+    No. Scribe is designed so that the person who creates or submits a request cannot also approve it. This ensures a proper review process. A separate user with approval permissions must review and approve the request.
+  </Accordion>
+
+  <Accordion title="Can I edit an extracted tag value if it is wrong?">
+    Yes. Any user with the **Edit tag values within a document** permission can make corrections to extracted tag values directly in Vault. You can also highlight text in the plain text view and manually assign it to a tag using the **Manually insert a tag in the plain text** permission.
+  </Accordion>
+
+  <Accordion title="How do I give a user access to Vault or Legislate?">
+    Access is controlled through roles. Your organisation admin needs to assign the user a role that includes the relevant permission — **Access to Vault and see documents** for Vault, or **Access to Legislate and see contracts/documents** for Legislate. This is done through the Admin portal. See the [User permissions reference](/administration/user-permissions) for the full list of permissions.
+  </Accordion>
+
+  <Accordion title="Can a user belong to more than one business unit?">
+    Yes. When an admin assigns a user in the Admin portal, they can add that user to multiple business units. This is useful for users who work across different teams or departments.
+  </Accordion>
+
+  <Accordion title="What is the 'Create personal team' permission?">
+    Added on 21 May 2025, this permission allows a user to create a personal draft space in Vault. A personal team is private to that user and is intended for experimenting with Vault before working with shared business unit documents. It is not a business unit and does not affect the rest of your organisation.
+  </Accordion>
+
+  <Accordion title="Who can change organisation settings?">
+    Only the designated organisation admin can access the Admin portal and change organisation settings, including creating business units, defining roles, and assigning users. If you need to change who has admin access, contact TextMine support.
+  </Accordion>
+
+</AccordionGroup>

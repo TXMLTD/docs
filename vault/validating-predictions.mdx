@@ -1,0 +1,54 @@
+---
+title: "Validating AI Predictions in Vault"
+sidebarTitle: "Validating Predictions"
+description: "Review Vault's AI-extracted tags, verify values against the source PDF, and validate predictions individually or all at once before submitting."
+---
+
+Validating predictions is the core review step in Vault. Before a document's data can be submitted to Legislate, every extracted tag must be validated — either by confirming the AI's answer is correct or by correcting it first. This ensures that only verified data enters your document database.
+
+## Opening the review screen
+
+Click on any document in your Vault team list to open the review screen. The uploaded PDF appears on the left; the list of extracted tags appears on the right.
+
+<Tip>Click any tag in the right-hand panel to jump to the section of the PDF the AI used to produce that value. This makes spot-checking fast without requiring you to read the whole document.</Tip>
+
+## Validating tags one by one
+
+For each tag in the panel on the right:
+
+<Steps>
+  <Step title="Review the value">
+    Read the extracted value and, if needed, click the tag to see the source text highlighted in the PDF.
+  </Step>
+  <Step title="Correct if needed">
+    If the value is incorrect or needs reformatting, click the **pen icon** to edit it. Type the correct value and press Enter or click away to save.
+  </Step>
+  <Step title="Validate">
+    Once the value is correct, click the **tick** to validate the tag. The tag moves to a validated state.
+  </Step>
+</Steps>
+
+You can return to a validated tag and make further edits by clicking the pen icon again.
+
+## Validating all tags at once
+
+If you have reviewed the document and are confident all predictions are correct, click the **All** (validate all) button in the top right of the editor. This validates every unvalidated tag in one action.
+
+<Warning>Use bulk validation only when you have reviewed the document and are confident in the extracted values. Validated data is treated as verified once submitted to Legislate.</Warning>
+
+## Submitting to Legislate
+
+The **Submit** button becomes active only after every tag has been validated (or rejected). Click **Submit** to push the document and its verified data to your paired Legislate team.
+
+<Info>If the Submit button remains greyed out, at least one tag still needs a decision. Scroll through the tag list to find any that are still in the unvalidated state.</Info>
+
+## Related actions
+
+<CardGroup cols={2}>
+  <Card title="Making corrections" icon="pen" href="/vault/making-corrections">
+    Reject wrong tags, fix values, or correct a misclassified document type.
+  </Card>
+  <Card title="Manual fields" icon="plus" href="/vault/manual-fields">
+    Add a custom tag for data Vault did not extract automatically.
+  </Card>
+</CardGroup>

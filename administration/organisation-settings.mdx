@@ -1,0 +1,67 @@
+---
+title: "Organisation settings for Enterprise customers"
+sidebarTitle: "Organisation settings"
+description: "Manage your Enterprise organisation in TextMine. Set up business units, define roles, control user permissions, and configure Vault behaviour per team."
+---
+
+Enterprise customers have access to organisation-level settings that let you structure your TextMine workspace to match how your teams actually work. You can create business units to separate teams, define roles that control what each user can do, and configure how Vault processes documents for each business unit — all from the Admin portal.
+
+## Admin portal
+
+The Admin portal is the central place for managing your organisation. It is only accessible to your designated organisation admin and is separate from the main TextMine application.
+
+From the Admin portal you can:
+
+- Create and manage **business units**
+- Create and manage **roles**
+- Assign users to roles and business units
+
+<Info>
+  Only the organisation admin can access the Admin portal. If you need admin access, contact your TextMine account manager.
+</Info>
+
+## Business units
+
+Business units represent teams or departments within your organisation. When users upload documents to Vault, those documents belong to a business unit. This keeps your document library organised and lets you apply different Vault settings to different teams.
+
+You can create as many business units as you need. A user can be a member of more than one business unit.
+
+### Vault settings per business unit
+
+Each business unit in Vault can be configured independently. From the business unit's settings page you can enable or disable the following:
+
+- **Signature detection** — automatically detect signature blocks in uploaded documents.
+- **Agile text extraction** — use an alternative extraction method for documents with non-standard layouts.
+- **Custom document types** — define your own document types and the tags that should be extracted for each one, in addition to TextMine's built-in types.
+
+<Note>
+  Changing Vault settings for a business unit affects all documents uploaded to that business unit going forward. Existing documents are not automatically reprocessed.
+</Note>
+
+## Roles and permissions
+
+Roles define what users can do across TextMine's modules. You create a role, assign a set of permissions to it, and then assign users to that role.
+
+Permissions are available for:
+
+- **Legislate** — viewing, managing, and exporting documents and contracts.
+- **Vault** — uploading, reviewing, tagging, and submitting documents.
+- **Vault Settings** — configuring custom tags, document types, and business unit settings.
+- **Other** — creating and managing Alerts and Agents.
+
+For the complete list of every available permission and what it controls, see the [User permissions reference](/administration/user-permissions).
+
+<Tip>
+  Start by creating roles that reflect your team's actual responsibilities — for example, a "Reviewer" role with validation permissions, and an "Uploader" role limited to uploading and viewing. You can always add or remove permissions from a role later.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="User permissions reference" icon="shield-check" href="/administration/user-permissions">
+    See every available permission, organised by Legislate, Vault, Vault Settings, and Other.
+  </Card>
+  <Card title="FAQ" icon="circle-question" href="/administration/faq">
+    Answers to common questions about logging out, file types, document types, and more.
+  </Card>
+</CardGroup>
